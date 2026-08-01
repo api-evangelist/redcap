@@ -1,19 +1,56 @@
 aid: redcap
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/redcap.png
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 name: RedCap
-description: RedCap is a company surfaced as a portfolio company of uncork-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: RedCap is an automotive dealer service software company that built an on-demand vehicle
+  pickup-and-delivery, loaner, and shuttle platform for dealership fixed-operations (service) departments
+  — offering live vehicle tracking, automated dispatching, at-home loaner contracting, on-demand parts
+  fulfillment, and Uber-integrated shuttle coordination that plug into a dealership's existing DMS and
+  service tools. Backed by Uncork Capital, RedCap was acquired by Solera and is now operated as Solera
+  Service Suite; its former site (getredcap.com) redirects to the Solera Service Suite product. RedCap
+  does not publish a public developer API, OpenAPI, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/redcap/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - uncork-capital
+x-acquired-by: solera
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Automotive
+- Dealership
+- Service
+- Fixed Operations
+- Pickup and Delivery
+- Logistics
+common:
+- type: DomainSecurity
+  url: security/redcap-domain-security.yml
+- type: Website
+  url: https://www.getredcap.com
+- type: Website
+  name: Solera Service Suite (successor product)
+  url: https://www.servicesuite.solera.com/
 apis: []
 maintainers:
 - FN: Kin Lane

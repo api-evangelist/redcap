@@ -55,6 +55,11 @@ tags:
 - Pickup and Delivery
 - Logistics
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/solera/
+  name: Solera
+  x-relationship: acquired
+  x-evidence: "Backed by Uncork Capital, RedCap was acquired by Solera and is now operated as Solera Service Suite; its former site (getredcap."
 - type: DomainSecurity
   url: security/redcap-domain-security.yml
 - type: Website
